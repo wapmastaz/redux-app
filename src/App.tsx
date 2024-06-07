@@ -1,12 +1,11 @@
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from './state/store';
+import { AppDispatch, RootState } from './services/state/store';
 import {
 	decrement,
-	increment,
 	incrementByAmount,
-  incrementAsync
-} from './state/counter/counterSlice';
+	incrementAsync,
+} from './services/state/counter/counterSlice';
 
 function App() {
 	const count = useSelector((state: RootState) => state.counter.value);
